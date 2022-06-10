@@ -1,0 +1,195 @@
+
+.backimage{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+}
+
+.backimages{
+  width: 100%;
+  height: 150%;
+  margin-top: -4px;
+  -webkit-filter: brightness(60%);
+
+}
+
+
+.mainimg {
+  position: absolute;
+  height: 50%;
+  margin-left: 32%;
+
+}
+
+.animimg {
+  width: 513px;
+  position: relative;
+  top: 75%;
+  transform: translateY(-50%);
+  animation-name: Appearance;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+  z-index: -1;
+}
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@media only screen and (max-width: 620px){
+  .mainimg{
+    width: 300px;
+    margin-left: 5px;
+
+    
+
+  }
+  .animimg{
+    width: 460px;
+  }
+
+  .backimage{
+
+    height: 80%;
+  }
+  .roomsimage{
+    margin-top: -150px;
+    margin-left: -18.8px;
+
+  }
+  .buttons{
+    margin-top: -30px;
+  }
+
+.images{
+
+margin-bottom: 6px;
+
+}
+
+
+
+}
+
+
+
+@font-face {
+ font-family: Lovelo;
+ src: url('WEB/Lovelo-LineBold.eot');
+ src: url('WEB/Lovelo-LineBold.eot?#iefix') format('embedded-opentype'),
+ url('WEB/Lovelo-LineBold.woff2') format('woff2'), 
+ url('WEB/Lovelo-LineBold.woff') format('woff'),
+ url('WEB/Lovelo-LineBold.ttf') format('truetype');
+}
+
+.home{
+  position: relative;
+  border: none;
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  top: 650px;
+  font-family: Lovelo;
+  animation-name: Appearance;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+
+}
+.buttons{
+  position: relative;
+  display: table;
+  top: 570px;
+  float: right;
+  animation-name: Appearance;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+
+}
+.button{
+  border: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 26px;
+  font-family: Lovelo;
+}
+.home:hover ,.button:hover{
+    color: black;
+   transition: 1s;
+
+}
+.roomsimage{
+  position: absolute;
+  top: 1000px;
+
+  
+}
+.images{
+  position: relative;
+  width: 480px;
+  height: 350px;
+  margin-left: 10px;
+  margin-bottom: 6px;
+
+ 
+
+}
+
+
+.first {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 480px;
+  height: 0;
+  transition: .5s ease;
+  margin-left: 10px;
+
+}
+.kit{
+  position: relative;
+
+}
+.kit:hover .first  {
+height: 350px;
+
+}
+
+.text {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: Lovelo;
+  text-align: center;
+
+}
+a{
+    text-decoration: none;
+}
+
