@@ -1,0 +1,324 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: Creolia;
+}
+
+/*  Side MenuBar Options Starts */
+.sidebar {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius:2px;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: right;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+
+}
+
+.openbtn {
+position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  right: 0px;
+  top:0px;
+  border: none;
+}
+
+
+.openbtn:hover {
+  background-color: white;
+  color:black;
+  transition:1.5s;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/*  Sidebar Menu Options  Ends */
+#background{
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+   -webkit-filter: brightness(30%);
+   filter: brightness(30%);
+   z-index: 0;
+}
+
+
+#maintext{
+  position: relative;
+  color: whitesmoke;
+  left: 0%;
+  font-size: 50px;
+  text-align: center;
+
+}
+@font-face {
+    font-family: 'Creolia';
+    src: url('Creolia.eot');
+    src: local('Creolia Bold'), local('Font/Creolia'),
+        url('Font/Creolia.eot?#iefix') format('embedded-opentype'),
+        url('Font/Creolia.woff2') format('woff2'),
+        url('Font/Creolia.woff') format('woff'),
+        url('Font/Creolia.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+.mainparagraph{
+  position: relative;
+
+}
+.offimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+
+.projectsections{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.projimg{
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 340px;
+  border: 2px solid black;
+  height: 300px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  
+}
+.projimg:hover{
+  opacity: 0.7;
+  transition: 0.8s;
+}
+
+.headings{
+  text-align: center;
+  color: whitesmoke;
+
+}
+.maded{
+  text-align: right;
+  color: whitesmoke;
+
+}
+
+
+
+
+
+/*  objects on bottom   */
+
+.fins2{
+  position: absolute;
+  width: 101.7%;
+  height: auto;
+  left: -1.8%;
+  background: gray;
+
+
+
+
+}
+.map{
+  position: relative;
+  width: 500px; 
+  height: 230px; 
+  border: none;
+  float: right;
+
+}
+.forlogo{
+  position: absolute;
+  display: block;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 35%;
+
+}
+/* container of  icons on bottom   */
+.icons{
+  position: relative;
+  display: inline-flex;
+  margin-left: 45%;
+  margin-top: 30px;
+
+
+}
+/*  icons of messengers on bottom   */
+ .fa {
+
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 12px;
+  color: white;
+}
+
+.fa:hover {
+    color: black;
+    background: white;
+  
+    transition: 1s;
+}
+@media only screen and (max-width: 500px){
+  
+  .map{
+    width: 380px;
+    height: 200px;
+  }
+  .projimg{
+
+    margin-left: -4px;
+  }
+
+
+  
+}
+@media only screen and (max-width: 370px){
+  
+  .fins2{
+    width: 112%;
+  }
+  .map{
+    width: 350px;
+    height: 200px;
+  }
+ .projimg{
+    width: 300px;
+    height: 250px;
+    margin-left: -4px;
+  }
+ 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: gray;
+
+
+}
+
+ 
+
+::-webkit-scrollbar-thumb {
+  background: floralwhite;
+  border-radius: 4px;
+
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+

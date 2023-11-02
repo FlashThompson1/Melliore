@@ -1,0 +1,279 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: Creolia;
+}
+
+/*  Side MenuBar Options Starts */
+.sidebar {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius:2px;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: right;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+
+}
+
+.openbtn {
+position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  right: 0px;
+  top:0px;
+  border: none;
+}
+
+
+.openbtn:hover {
+  background-color: white;
+  color:black;
+  transition:1.5s;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+/*  Sidebar Menu Options  Ends */
+#background{
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+   -webkit-filter: brightness(30%);
+   filter: brightness(30%);
+   z-index: 0;
+}
+
+
+#maintext{
+  position: relative;
+  color: whitesmoke;
+  left: 0%;
+  font-size: 50px;
+  text-align: center;
+
+}
+@font-face {
+    font-family: 'Creolia';
+    src: url('Creolia.eot');
+    src: local('Creolia Bold'), local('Font/Creolia'),
+        url('Font/Creolia.eot?#iefix') format('embedded-opentype'),
+        url('Font/Creolia.woff2') format('woff2'),
+        url('Font/Creolia.woff') format('woff'),
+        url('Font/Creolia.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+.mainparagraph{
+  position: relative;
+
+}
+.offimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+
+
+.members{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.memimg{
+  position: relative;
+  border-radius: 5px;
+  width: 340px;
+  border: 2px solid black;
+  height: 400px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.headings{
+  text-align: center;
+  color: whitesmoke;
+
+}
+
+#about{
+  position: relative;
+  font-size: 23px;
+  color: whitesmoke;
+  text-align: center;
+
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 344px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.prof{
+  position: relative;
+
+
+}
+
+
+.sectext {
+  color: white;
+  position: inherit;
+  width: 100%;
+  top: 50%;
+  left: 50.4%;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50.4%, -55%);
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+/*  objects on bottom   */
+.fins2{
+  position: absolute;
+  width: 101.7%;
+  height: auto;
+  left: -1.8%;
+  background: gray;
+}
+.map{
+  position: relative;
+  width: 500px; 
+  height: 230px; 
+  border: none;
+  float: right;
+
+}
+.forlogo{
+  position: absolute;
+  display: block;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 35%;
+
+}
+/* container of  icons on bottom   */
+.icons{
+  position: relative;
+  display: inline-flex;
+  margin-left: 45%;
+  margin-top: 30px;
+
+
+}
+/*  icons of messengers on bottom   */
+ .fa {
+
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 3px;
+  color: white;
+}
+
+.fa:hover {
+    color: black;
+    background: white;
+  
+    transition: 1s;
+}
+@media only screen and (max-width: 500px){
+  
+  .map{
+    width: 380px;
+    height: 200px;
+  }
+  
+}
+@media only screen and (max-width: 370px){
+  
+  .memimg{
+    margin-left: 0px;
+  }
+  .second{
+    margin-left: 0px;
+  }
+  
+}
+@media only screen and (max-width: 320px){
+
+  .memimg{
+    width: 300px;
+  }
+  .second{
+    width: 305px;
+  }
+  
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: gray;
+
+
+}
+
+ 
+
+::-webkit-scrollbar-thumb {
+  background: floralwhite;
+  border-radius: 4px;
+
+
+}
